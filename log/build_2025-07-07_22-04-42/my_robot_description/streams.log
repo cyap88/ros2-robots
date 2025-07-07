@@ -1,0 +1,45 @@
+[0.006s] Invoking command in '/home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description': /usr/bin/cmake --build /home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description -- -j11 -l11
+[0.022s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.097s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.126s] Error parsing '/home/ubuntu/ROS/Bot/ros2-robots/src/my_robot_description/package.xml':
+[0.128s] Traceback (most recent call last):
+[0.128s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.129s]     root = dom.parseString(data)
+[0.129s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString
+[0.130s]     return expatbuilder.parseString(string)
+[0.130s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[0.130s]     return builder.parseString(string)
+[0.130s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[0.130s]     parser.Parse(string, True)
+[0.130s] xml.parsers.expat.ExpatError: junk after document element: line 23, column 0
+[0.130s] 
+[0.130s] During handling of the above exception, another exception occurred:
+[0.130s] 
+[0.130s] Traceback (most recent call last):
+[0.131s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.131s]     main()
+[0.131s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.131s]     raise e
+[0.131s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.131s]     package = parse_package_string(
+[0.131s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.131s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.131s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/ubuntu/ROS/Bot/ros2-robots/src/my_robot_description/package.xml':
+[0.131s] The manifest contains invalid XML:
+[0.131s] junk after document element: line 23, column 0
+[0.136s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.136s]   execute_process(/usr/bin/python3
+[0.136s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.136s]   /home/ubuntu/ROS/Bot/ros2-robots/src/my_robot_description/package.xml
+[0.136s]   /home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description/ament_cmake_core/package.cmake)
+[0.136s]   returned error code 1
+[0.136s] Call Stack (most recent call first):
+[0.136s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.136s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.136s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[0.136s] 
+[0.136s] [0m
+[0.136s] -- Configuring incomplete, errors occurred!
+[0.136s] See also "/home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description/CMakeFiles/CMakeOutput.log".
+[0.138s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.139s] Invoked command in '/home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description' returned '2': /usr/bin/cmake --build /home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description -- -j11 -l11

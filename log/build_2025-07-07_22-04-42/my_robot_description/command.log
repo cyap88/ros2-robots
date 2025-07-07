@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description': /usr/bin/cmake --build /home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description -- -j11 -l11
+Invoked command in '/home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description' returned '2': /usr/bin/cmake --build /home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description -- -j11 -l11

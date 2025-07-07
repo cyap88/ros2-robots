@@ -1,0 +1,1 @@
+/home/ubuntu/ROS/Bot/ros2-robots/build/my_robot_description/ament_cmake_core/my_robot_descriptionConfig-version.cmake
