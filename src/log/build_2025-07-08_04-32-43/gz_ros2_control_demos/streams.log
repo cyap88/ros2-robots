@@ -1,0 +1,137 @@
+[0.008s] Invoking command in '/home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos': CMAKE_PREFIX_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/my_robot_description:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control/lib:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/ubuntu/ROS/Bot/ros2-robots/src/gz_ros2_control/gz_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos
+[0.050s] -- The C compiler identification is GNU 11.4.0
+[0.074s] -- The CXX compiler identification is GNU 11.4.0
+[0.078s] -- Detecting C compiler ABI info
+[0.109s] -- Detecting C compiler ABI info - done
+[0.113s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.114s] -- Detecting C compile features
+[0.114s] -- Detecting C compile features - done
+[0.115s] -- Detecting CXX compiler ABI info
+[0.151s] -- Detecting CXX compiler ABI info - done
+[0.155s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.155s] -- Detecting CXX compile features
+[0.155s] -- Detecting CXX compile features - done
+[0.160s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.237s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.288s] -- Found control_msgs: 4.8.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.315s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.317s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.322s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.329s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.338s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.404s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.447s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.453s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.598s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.619s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.653s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.658s] -- Looking for pthread.h
+[0.699s] -- Looking for pthread.h - found
+[0.700s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.742s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.743s] -- Found Threads: TRUE  
+[0.776s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.792s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.859s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.860s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.860s] -- Configured cppcheck include dirs: 
+[0.860s] -- Configured cppcheck exclude dirs and/or files: 
+[0.861s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.861s] -- Configured cpplint exclude dirs and/or files: 
+[0.861s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.862s] -- Added test 'lint_cmake' to check CMake code style
+[0.862s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.864s] -- Added test 'uncrustify' to check C / C++ code style
+[0.864s] -- Configured uncrustify additional arguments: 
+[0.864s] -- Added test 'xmllint' to check XML markup files
+[0.865s] -- Configuring done
+[0.927s] -- Generating done
+[0.936s] -- Build files have been written to: /home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos
+[0.942s] Invoked command in '/home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/my_robot_description:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control/lib:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/ubuntu/ROS/Bot/ros2-robots/src/gz_ros2_control/gz_ros2_control_demos -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos
+[0.944s] Invoking command in '/home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos': CMAKE_PREFIX_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/my_robot_description:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control/lib:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos -- -j11 -l11
+[0.980s] [  7%] [32mBuilding CXX object CMakeFiles/example_velocity.dir/examples/example_position.cpp.o[0m
+[0.981s] [ 14%] [32mBuilding CXX object CMakeFiles/example_position.dir/examples/example_position.cpp.o[0m
+[0.982s] [ 21%] [32mBuilding CXX object CMakeFiles/example_effort.dir/examples/example_position.cpp.o[0m
+[0.982s] [ 28%] [32mBuilding CXX object CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o[0m
+[0.982s] [ 35%] [32mBuilding CXX object CMakeFiles/example_ackermann_drive.dir/examples/example_ackermann_drive.cpp.o[0m
+[0.983s] [ 42%] [32mBuilding CXX object CMakeFiles/example_diff_drive.dir/examples/example_diff_drive.cpp.o[0m
+[0.983s] [ 50%] [32mBuilding CXX object CMakeFiles/example_tricycle_drive.dir/examples/example_tricycle_drive.cpp.o[0m
+[4.584s] [ 64%] [32m[1mLinking CXX executable example_tricycle_drive[0m
+[4.584s] [ 64%] [32m[1mLinking CXX executable example_ackermann_drive[0m
+[4.623s] [ 71%] [32m[1mLinking CXX executable example_diff_drive[0m
+[4.718s] [ 78%] [32m[1mLinking CXX executable example_gripper[0m
+[4.718s] [ 78%] Built target example_ackermann_drive
+[4.721s] [ 78%] Built target example_tricycle_drive
+[4.743s] [ 78%] Built target example_diff_drive
+[4.812s] [ 78%] Built target example_gripper
+[4.825s] [ 85%] [32m[1mLinking CXX executable example_velocity[0m
+[4.876s] [ 92%] [32m[1mLinking CXX executable example_position[0m
+[4.936s] [ 92%] Built target example_velocity
+[4.990s] [ 92%] Built target example_position
+[5.000s] [100%] [32m[1mLinking CXX executable example_effort[0m
+[5.092s] [100%] Built target example_effort
+[5.109s] Invoked command in '/home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/my_robot_description:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control/lib:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos -- -j11 -l11
+[5.113s] Invoking command in '/home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos': CMAKE_PREFIX_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/my_robot_description:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control/lib:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos
+[5.116s] -- Install configuration: ""
+[5.116s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch
+[5.116s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/gripper_mimic_joint_example.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/cart_example_velocity.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/ackermann_drive_example.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/diff_drive_example_namespaced.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/mecanum_drive_example.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/diff_drive_example.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/tricycle_drive_example.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/pendulum_example_effort.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/cart_example_position.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/pendulum_example_position.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//launch/cart_example_effort.launch.py
+[5.117s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/ackermann_drive_controller.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/cart_controller_position.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/diff_drive_controller.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/cart_controller_velocity.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/tricycle_drive_controller.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/cart_controller_effort.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/mecanum_drive_controller.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//config/gripper_controller.yaml
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_mecanum_drive.xacro.urdf
+[5.118s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_cart_velocity.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_tricycle_drive.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_pendulum_effort.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_diff_drive.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_gripper_mimic_joint.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_cart_position.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_ackermann_drive.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_cart_effort.xacro.urdf
+[5.119s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos//urdf/test_pendulum_position.xacro.urdf
+[5.120s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_position
+[5.122s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_position" to ""
+[5.122s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_velocity
+[5.122s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_velocity" to ""
+[5.122s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_effort
+[5.123s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_effort" to ""
+[5.123s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_diff_drive
+[5.123s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_diff_drive" to ""
+[5.123s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_tricycle_drive
+[5.124s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_tricycle_drive" to ""
+[5.124s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_ackermann_drive
+[5.125s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_ackermann_drive" to ""
+[5.125s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_gripper
+[5.125s] -- Set runtime path of "/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/lib/gz_ros2_control_demos/example_gripper" to ""
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/ament_index/resource_index/package_run_dependencies/gz_ros2_control_demos
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/ament_index/resource_index/parent_prefix_path/gz_ros2_control_demos
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/ament_prefix_path.sh
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/ament_prefix_path.dsv
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/path.sh
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/environment/path.dsv
+[5.126s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.bash
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.sh
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.zsh
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/local_setup.dsv
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.dsv
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/ament_index/resource_index/packages/gz_ros2_control_demos
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/cmake/gz_ros2_control_demosConfig.cmake
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/cmake/gz_ros2_control_demosConfig-version.cmake
+[5.127s] -- Installing: /home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos/share/gz_ros2_control_demos/package.xml
+[5.129s] Invoked command in '/home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/my_robot_description:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_tests:/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control_demos:/home/ubuntu/ROS/Bot/ros2-robots/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/ubuntu/ROS/Bot/ros2-robots/src/install/gz_ros2_control/lib:/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/ubuntu/ROS/Bot/ros2-robots/src/build/gz_ros2_control_demos

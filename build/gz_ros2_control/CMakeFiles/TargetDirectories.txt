@@ -1,0 +1,12 @@
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/uninstall.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/gz_ros2_control_uninstall.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/gz_ros2_control-system.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/gz_hardware_plugins.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/ign_ros2_control-system.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/test.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/edit_cache.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/list_install_components.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/install.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/install/local.dir
+/home/ubuntu/ROS/Bot/ros2-robots/build/gz_ros2_control/CMakeFiles/install/strip.dir

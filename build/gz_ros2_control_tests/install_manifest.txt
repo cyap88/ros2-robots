@@ -1,0 +1,15 @@
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/ament_index/resource_index/package_run_dependencies/gz_ros2_control_tests
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/ament_index/resource_index/parent_prefix_path/gz_ros2_control_tests
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/ament_prefix_path.sh
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/ament_prefix_path.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/path.sh
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/environment/path.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.bash
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.sh
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.zsh
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/local_setup.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/ament_index/resource_index/packages/gz_ros2_control_tests
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/cmake/gz_ros2_control_testsConfig.cmake
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/cmake/gz_ros2_control_testsConfig-version.cmake
+/home/ubuntu/ROS/Bot/ros2-robots/install/gz_ros2_control_tests/share/gz_ros2_control_tests/package.xml

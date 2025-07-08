@@ -1,0 +1,15 @@
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ament_index/resource_index/package_run_dependencies/ign_ros2_control
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ament_index/resource_index/parent_prefix_path/ign_ros2_control
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.sh
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/environment/ament_prefix_path.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/environment/path.sh
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/environment/path.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/local_setup.bash
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/local_setup.sh
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/local_setup.zsh
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/local_setup.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/package.dsv
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ament_index/resource_index/packages/ign_ros2_control
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig.cmake
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/cmake/ign_ros2_controlConfig-version.cmake
+/home/ubuntu/ROS/Bot/ros2-robots/src/install/ign_ros2_control/share/ign_ros2_control/package.xml
