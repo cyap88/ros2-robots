@@ -14,11 +14,11 @@ def generate_launch_description():
     
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    declare_use_sim_time = DeclareLaunchArgument(
+    use_sim_time_arg = DeclareLaunchArgument(
             'use_sim_time', default_value='false',
             description='Use sim time if true')
 
-    declare_urdf = DeclareLaunchArgument(
+    urdf_arg = DeclareLaunchArgument(
             name='urdf', default_value=urdf_path,
             description='Path to the robot description file')
 
@@ -29,4 +29,4 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time,'robot_description': Command(['xacro ', urdf])}]
     )
 
-    return LaunchDescription([declare_urdf,declare_use_sim_time,robot_state_publisher])
+    return LaunchDescription([urdf_arg,use_sim_time_arg,robot_state_publisher])
