@@ -1,17 +1,17 @@
 import os
+from launch_ros.actions import Node
 from launch import LaunchDescription
-from launch.substitutions import LaunchConfigurations
+from launch.conditions import IfCondition
+from ament_index_python.packages import get_package_share_directory
+from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction
-from ament_index_python.packages import get_package_share_directory
-from launch.conditions import IfCondition
-from launch_ros.actions import Node
 
 def generate_launch_description():
     package = "diff_drive_bot"
     world = LaunchConfiguration('world')
     urdf_path = os.path.join(get_package_share_directory(package), "urdf", "robot.urdf.xacro")
-    world_path = os.path.join(get_package_share_directory(package), "worlds", "empty.world")
+    world_path = os.path.join(get_package_share_directory(package), "worlds", "cones.world")
     
     world_arg = DeclareLaunchArgument(
         name='world', default_value=world_path, description='Load world'
