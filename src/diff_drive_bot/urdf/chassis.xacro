@@ -18,14 +18,18 @@
     <material name = "white">
         <color rgba="1 1 1 1"/>
     </material>
-    
-    <link name = "base_footprint"/>
+
+    <material name = "black">
+        <color rgba = "0 0 0 1"/>
+    </material>
+
+    <!-- <link name = "base_footprint"/>
 
     <joint name = "base_joint" type = "fixed">
         <parent link = "base_footprint"/>
         <child link = "base_link"/>
         <origin xyz = "0 0 0.1" rpy = "0 0 0" />
-    </joint>
+    </joint> -->
 
     <link name = "base_link">
         <visual>
@@ -152,4 +156,50 @@
         <child link = "lidar"/>
         <origin xyz = "0 0 0.225" rpy = "0 0 0"/>
     </joint>
+
+    <link name = "camera">
+        <visual>
+            <geometry>
+                <box size = "0.01 0.025 0.025"/>
+            </geometry>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <material name = "black"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size = "0.01 0.025 0.025"/>
+            </geometry>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+        </collision>
+        <inertial>
+            <mass value = "0.01"/>
+            <origin xyz = "0 0 0" rpy = "0 0 0"/>
+            <inertia ixx="0.000217" ixy = "0" ixz = "0" iyy = "0.000417" iyz = "0" izz = "0.000217"/>
+        </inertial>
+    </link>
+    <joint name = "camera_joint" type = "fixed">
+        <parent link = "base_link"/>
+        <child link = "camera"/>
+        <origin xyz = "0.305 0 0.2" rpy = "0 0 0"/>
+    </joint>
+
+    <gazebo reference="base_link">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="caster_wheel">
+        <mu1>0.000001</mu1>
+        <mu2>0.000001</mu2>
+    </gazebo>
 </robot>

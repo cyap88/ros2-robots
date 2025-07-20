@@ -20,7 +20,7 @@ def generate_launch_description():
 
     urdf_arg = DeclareLaunchArgument(
             name='urdf', default_value=urdf_path,
-            description='Path to the robot description file')
+            description='Path of robot description file')
 
     robot_state_publisher = Node(
         package='robot_state_publisher',
