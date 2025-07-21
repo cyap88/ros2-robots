@@ -15,9 +15,9 @@ def generate_launch_description():
     urdf_path = os.path.join(get_package_share_directory(package), "urdf", "robot.urdf.xacro")
     world_path = os.path.join(get_package_share_directory(package), "worlds", "boxed.world")
 
-    rviz = LaunchConfiguration('rviz')
+    # rviz = LaunchConfiguration('rviz')
 
-    rviz_arg = DeclareLaunchArgument(name='rviz', default_value='true', description="Open rviz")
+    # rviz_arg = DeclareLaunchArgument(name='rviz', default_value='true', description="Open rviz")
 
     world_arg = DeclareLaunchArgument(
         name='world', default_value=world_path, description='Load world'
@@ -34,21 +34,19 @@ def generate_launch_description():
                         get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py'
                     )]), launch_arguments={'gz_args': ['-r ', world], 'on_exit_shutdown': 'true'}.items()
     )
+    # regular gazebo + rviz2
+    # rviz_config = PathJoinSubstitution([FindPackageShare('diff_drive_bot'), 'rviz', 'rviz.rviz'])
+    # nav2 + SLAM
+    # rviz_config = PathJoinSubstitution([FindPackageShare('diff_drive_bot'), 'rviz', 'rviz2.rviz'])
 
-    rviz_config = PathJoinSubstitution([
-        FindPackageShare('diff_drive_bot'),
-        'rviz',
-        'rviz1.rviz'
-    ])
-
-    rviz2 = GroupAction(
-        condition=IfCondition(rviz),
-        actions=[Node(
-                    package='rviz2',
-                    executable='rviz2',
-                    arguments=['-d', rviz_config],
-                    output='screen',)]
-    )
+    # rviz2 = GroupAction(
+    #     condition=IfCondition(rviz),
+    #     actions=[Node(
+    #                 package='rviz2',
+    #                 executable='rviz2',
+    #                 arguments=['-d', rviz_config],
+    #                 output='screen',)]
+    # )
 
     spawn_bot = Node(
             package='ros_gz_sim', 
@@ -69,4 +67,8 @@ def generate_launch_description():
             f'config_file:={bridge}',]
     )
    
-    return LaunchDescription([rviz_arg, world_arg, rviz2, rsp, gazebo, ros_gz_bridge, spawn_bot])
+    return LaunchDescription([
+        # rviz_arg, 
+        world_arg, 
+        # rviz2, 
+        rsp, gazebo, ros_gz_bridge, spawn_bot])

@@ -157,6 +157,13 @@
         <origin xyz = "0 0 0.225" rpy = "0 0 0"/>
     </joint>
 
+    <link name="scan_link" />
+    <joint name="scan_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="scan_link"/>
+        <origin xyz="0.0 0 0.225" rpy="0 0 0"/>
+    </joint>
+
     <link name = "camera">
         <visual>
             <geometry>

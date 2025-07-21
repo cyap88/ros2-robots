@@ -26,7 +26,8 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[{'use_sim_time': use_sim_time,'robot_description': Command(['xacro ', urdf])}]
+        parameters=[{'use_sim_time': use_sim_time,'robot_description': Command(['xacro ', urdf]),
+        'publish_frequency': 30.0 }]
     )
 
     return LaunchDescription([urdf_arg,use_sim_time_arg,robot_state_publisher])
