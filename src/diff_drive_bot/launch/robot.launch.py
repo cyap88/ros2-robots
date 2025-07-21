@@ -13,7 +13,7 @@ def generate_launch_description():
     world = LaunchConfiguration('world')
 
     urdf_path = os.path.join(get_package_share_directory(package), "urdf", "robot.urdf.xacro")
-    world_path = os.path.join(get_package_share_directory(package), "worlds", "cones.world")
+    world_path = os.path.join(get_package_share_directory(package), "worlds", "boxed.world")
 
     rviz = LaunchConfiguration('rviz')
 

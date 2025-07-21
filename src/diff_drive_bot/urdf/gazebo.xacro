@@ -9,7 +9,6 @@
             <!-- <wheel_diameter>0.1</wheel_diameter> -->
 
             <max_linear_acceleration>10</max_linear_acceleration>
-worlds
             <topic>cmd_vel</topic>
 
             <odom_topic>odom</odom_topic>
@@ -31,7 +30,7 @@ worlds
         <sensor name = "gpu_lidar" type = "gpu_lidar">
             <pose relative_to="lidar">0 0 0 0 0 0</pose>
             <topic>scan</topic>
-            <update_rate>2</update_rate>
+            <update_rate>10</update_rate>
             <lidar>
                 <scan>
                     <horizontal>
@@ -67,4 +66,6 @@ worlds
         <sensor>
             
         </sensor> -->
+
+    
 </robot>
