@@ -29,7 +29,7 @@ def generate_launch_description():
     )
 
     rviz_config_arg = DeclareLaunchArgument(
-        'rviz_config', default_value='rviz2.rviz',
+        'rviz_config', default_value='mapping.rviz',
         description='RViz config file'
     )
 
@@ -52,6 +52,7 @@ def generate_launch_description():
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
+        name = 'rviz',
         arguments=['-d', PathJoinSubstitution([pkg_diff_drive, 'rviz', LaunchConfiguration('rviz_config')])],
         condition=IfCondition(LaunchConfiguration('rviz')),
         parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]

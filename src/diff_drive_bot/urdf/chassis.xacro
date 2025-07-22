@@ -36,17 +36,18 @@
             <geometry>
                 <box size = "${length} ${width} ${height}" />
             </geometry>
-            <origin xyz = "0 0 0.1" rpy = "0 0 0"/>
+            <origin xyz = "0 0 ${2*wheel_radius}" rpy = "0 0 0"/>
             <material name= "orange"/>
         </visual>
         <collision>
             <geometry>
                 <box size = "${length} ${width} ${height}" />
             </geometry>
+            <origin xyz="0 0 ${2*wheel_radius}"/>
         </collision>
         <inertial>
             <mass value="5"/>
-            <origin xyz="0 0 0" rpy = "0 0 0"/>
+            <origin xyz="0 0 ${wheel_radius + height/2}" rpy = "0 0 0"/>
             <inertia ixx="0.083" ixy="0" ixz="0" iyy="0.11" iyz="0" izz="0.13"/>
         </inertial>
     </link>
@@ -74,7 +75,7 @@
     <joint name = "left_wheel_joint" type = "continuous">
         <parent link = "base_link"/>
         <child link = "left_wheel"/>
-        <origin xyz = "-${length/4} ${width/2 + wheel_len/2} 0"/>
+        <origin xyz="-${length/4} ${width/2 + wheel_len/2} ${wheel_radius}"/>
         <axis xyz = "0 1 0"/>
     </joint>
 
@@ -101,7 +102,7 @@
     <joint name = "right_wheel_joint" type = "continuous">
         <parent link = "base_link"/>
         <child link = "right_wheel"/>
-        <origin xyz = "-${length/4} -${width/2 + wheel_len/2} 0"/>
+        <origin xyz = "-${length/4} -${width/2 + wheel_len/2} ${wheel_radius}"/>
         <axis xyz = "0 1 0"/>
     </joint>
 
@@ -128,7 +129,7 @@
     <joint name = "caster_wheel_joint" type = "fixed">
         <parent link = "base_link"/>
         <child link = "caster_wheel"/>
-        <origin xyz = "0.2 0 -0.05"/>
+        <origin xyz = "0.2 0 ${wheel_radius/2}"/>
     </joint>
 
     <link name = "lidar">
@@ -154,14 +155,14 @@
     <joint name = "lidar_joint" type = "fixed">
         <parent link = "base_link"/>
         <child link = "lidar"/>
-        <origin xyz = "0 0 0.225" rpy = "0 0 0"/>
+        <origin xyz = "0 0 ${3*wheel_radius + 0.025}" rpy = "0 0 0"/>
     </joint>
 
     <link name="scan_link" />
     <joint name="scan_joint" type="fixed">
         <parent link="base_link"/>
         <child link="scan_link"/>
-        <origin xyz="0.0 0 0.225" rpy="0 0 0"/>
+        <origin xyz="0.0 0 ${3*wheel_radius + 0.025}" rpy="0 0 0"/>
     </joint>
 
     <link name = "camera">
