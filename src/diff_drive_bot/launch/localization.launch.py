@@ -8,19 +8,21 @@ from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    pkg = get_package_share_directory('diff_drive_bot')
-    robot_launch_path = os.path.join(pkg, 'launch', 'robot.launch.py')
+    
+    package = get_package_share_directory('diff_drive_bot')
+    robot_launch_path = os.path.join(package, 'launch', 'robot.launch.py')
 
-    models_path, _ = os.path.split(pkg)
+    models_path, _ = os.path.split(package)
     os.environ.setdefault('GZ_SIM_RESOURCE_PATH', '')
     os.environ['GZ_SIM_RESOURCE_PATH'] += os.pathsep + models_path
 
-    use_sim_time_args = DeclareLaunchArgument(
+    sim_time_args = DeclareLaunchArgument(
         'use_sim_time', default_value='true')
 
     map_args = DeclareLaunchArgument(
         'map',
-        default_value=PathJoinSubstitution([pkg, 'map', 'my_map2.yaml']))
+        default_value=PathJoinSubstitution([package, 'map', 'my_map2.yaml'])
+    )
     
     robot_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(robot_launch_path),
@@ -31,8 +33,9 @@ def generate_launch_description():
         package='rviz2',
         executable='rviz2',
         name='rviz',
-        arguments=['-d', PathJoinSubstitution([pkg, 'rviz', 'localization.rviz'])],
-        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}])
+        arguments=['-d', PathJoinSubstitution([package, 'rviz', 'localization2.rviz'])],
+        parameters=[{'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
 
     nav2_localization = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -40,17 +43,10 @@ def generate_launch_description():
                                   'launch', 'localization_launch.py'])),
         launch_arguments={
             'map': LaunchConfiguration('map'),
-            'params_file': PathJoinSubstitution(
-                [pkg, 'config', 'amcl.yaml']),
+            'params_file': PathJoinSubstitution([package, 'config', 'amcl.yaml']),
             'use_sim_time': LaunchConfiguration('use_sim_time'),
             'autostart':  'true'
         }.items()
     )
 
-    ld = LaunchDescription()
-    ld.add_action(use_sim_time_args)
-    ld.add_action(robot_launch)
-    ld.add_action(map_args)
-    ld.add_action(rviz)
-    ld.add_action(nav2_localization)
-    return ld
+    return LaunchDescription([sim_time_args, map_args, robot_launch, rviz, nav2_localization])

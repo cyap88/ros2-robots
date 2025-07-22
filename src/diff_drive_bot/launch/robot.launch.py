@@ -15,10 +15,6 @@ def generate_launch_description():
     urdf_path = os.path.join(get_package_share_directory(package), "urdf", "robot.urdf.xacro")
     world_path = os.path.join(get_package_share_directory(package), "worlds", "boxed.world")
 
-    # rviz = LaunchConfiguration('rviz')
-
-    # rviz_arg = DeclareLaunchArgument(name='rviz', default_value='true', description="Open rviz")
-
     world_arg = DeclareLaunchArgument(
         name='world', default_value=world_path, description='Load world'
     )
@@ -34,6 +30,11 @@ def generate_launch_description():
                         get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py'
                     )]), launch_arguments={'gz_args': ['-r ', world], 'on_exit_shutdown': 'true'}.items()
     )
+    
+    # rviz = LaunchConfiguration('rviz')
+
+    # rviz_arg = DeclareLaunchArgument(name='rviz', default_value='true', description="Open rviz")
+
     # regular gazebo + rviz2
     # rviz_config = PathJoinSubstitution([FindPackageShare('diff_drive_bot'), 'rviz', 'rviz.rviz'])
     # nav2 + SLAM
