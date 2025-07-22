@@ -9,11 +9,11 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    pkg = get_package_share_directory('diff_drive_bot')
+    package = get_package_share_directory('diff_drive_bot')
 
     os.environ.setdefault("GZ_SIM_RESOURCE_PATH", "")
 
-    gazebo_models_path, _ = os.path.split(pkg)
+    gazebo_models_path, _ = os.path.split(package)
     os.environ["GZ_SIM_RESOURCE_PATH"] += os.pathsep + gazebo_models_path
 
     sim_time_args = DeclareLaunchArgument(
@@ -21,7 +21,7 @@ def generate_launch_description():
         description='Flag to enable use_sim_time'
     )
 
-    robot_launch_path = os.path.join(pkg, "launch", "robot.launch.py")
+    robot_launch_path = os.path.join(package, "launch", "robot.launch.py")
     robot_launch_arg = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(robot_launch_path),
         launch_arguments={'use_sim_time': LaunchConfiguration('use_sim_time')}.items()
@@ -44,9 +44,9 @@ def generate_launch_description():
         'navigation_launch.py'
     )
 
-    localization_params_path = PathJoinSubstitution([pkg, 'config', 'amcl.yaml'])
-    navigation_params_path = PathJoinSubstitution([pkg, 'config', 'nav2_params.yaml'])
-    map_file_path = PathJoinSubstitution([pkg, 'map', 'my_map2.yaml'])
+    localization_params_path = PathJoinSubstitution([package, 'config', 'amcl.yaml'])
+    navigation_params_path = PathJoinSubstitution([package, 'config', 'nav2_params.yaml'])
+    map_file_path = PathJoinSubstitution([package, 'map', 'my_map2.yaml'])
 
     rviz_launch_arg = DeclareLaunchArgument(
             'rviz', default_value='true',
@@ -55,7 +55,7 @@ def generate_launch_description():
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', PathJoinSubstitution([pkg, 'rviz', LaunchConfiguration('rviz_config')])],
+        arguments=['-d', PathJoinSubstitution([package, 'rviz', LaunchConfiguration('rviz_config')])],
         condition=IfCondition(LaunchConfiguration('rviz')),
         parameters=[
             {'use_sim_time': LaunchConfiguration('use_sim_time')},

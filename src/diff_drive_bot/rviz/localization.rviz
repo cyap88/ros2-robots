@@ -7,6 +7,9 @@ Panels:
         - /Global Options1
         - /RobotModel1/Description Topic1
         - /Map1
+        - /Map1/Topic1
+        - /ParticleCloud1
+        - /ParticleCloud1/Topic1
       Splitter Ratio: 0.5
     Tree Height: 416
   - Class: rviz_common/Selection
@@ -166,7 +169,7 @@ Visualization Manager:
       Name: Map
       Topic:
         Depth: 5
-        Durability Policy: Volatile
+        Durability Policy: Transient Local
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
@@ -212,6 +215,22 @@ Visualization Manager:
         Value: ""
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Class: nav2_rviz_plugins/ParticleCloud
+      Color: 255; 25; 0
+      Enabled: true
+      Max Arrow Length: 0.30000001192092896
+      Min Arrow Length: 0.019999999552965164
+      Name: ParticleCloud
+      Shape: Arrow (Flat)
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /particle_cloud
       Value: true
   Enabled: true
   Global Options:
@@ -259,25 +278,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 3.6999754905700684
+      Distance: 12.839327812194824
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.4889957904815674
-        Y: 0.2823869585990906
-        Z: 0.146095409989357
+        X: 0.4321061670780182
+        Y: -0.9061360359191895
+        Z: 0.1682041883468628
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.019796695560216904
+      Pitch: 1.5497963428497314
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.098572731018066
+      Yaw: 3.1935746669769287
     Saved:
       - Class: rviz_default_plugins/Orbit
         Distance: 2.1563243865966797

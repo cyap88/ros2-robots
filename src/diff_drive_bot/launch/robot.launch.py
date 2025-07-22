@@ -9,6 +9,7 @@ from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, Grou
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
+
     package = "diff_drive_bot"
     world = LaunchConfiguration('world')
 
@@ -30,15 +31,12 @@ def generate_launch_description():
                         get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py'
                     )]), launch_arguments={'gz_args': ['-r ', world], 'on_exit_shutdown': 'true'}.items()
     )
-    
-    # rviz = LaunchConfiguration('rviz')
 
+    # rviz = LaunchConfiguration('rviz')
     # rviz_arg = DeclareLaunchArgument(name='rviz', default_value='true', description="Open rviz")
 
     # regular gazebo + rviz2
-    # rviz_config = PathJoinSubstitution([FindPackageShare('diff_drive_bot'), 'rviz', 'rviz.rviz'])
-    # nav2 + SLAM
-    # rviz_config = PathJoinSubstitution([FindPackageShare('diff_drive_bot'), 'rviz', 'rviz2.rviz'])
+    # rviz_config = PathJoinSubstitution([FindPackageShare('diff_drive_bot'), 'rviz', 'regular.rviz'])
 
     # rviz2 = GroupAction(
     #     condition=IfCondition(rviz),
@@ -72,4 +70,5 @@ def generate_launch_description():
         # rviz_arg, 
         world_arg, 
         # rviz2, 
-        rsp, gazebo, ros_gz_bridge, spawn_bot])
+        rsp, gazebo, ros_gz_bridge, spawn_bot
+        ])
